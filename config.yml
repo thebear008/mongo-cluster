@@ -1,0 +1,16 @@
+systemLog:
+   destination: file
+   path: "~/Téléchargements/mongodb-linux-x86_64-rhel70-3.6.9/mongod.log"
+   logAppend: true
+   logRotate: "rename"
+   verbosity: 1  # enable who did what actions
+storage:
+   dbPath: "~/Téléchargements/mongodb-linux-x86_64-rhel70-3.6.9/data"
+   journal:
+      enabled: true
+processManagement:
+   fork: true  # run mongod as daemon
+   pidFilePath: "~/Téléchargements/mongodb-linux-x86_64-rhel70-3.6.9/mongod.pid"
+net:
+   bindIp: 127.0.0.1
+   port: 27017

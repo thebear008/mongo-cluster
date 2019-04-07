@@ -82,3 +82,11 @@ rs.addArb("sony:27019")
 ~/Téléchargements/mongodb-linux-x86_64-rhel70-3.6.9/bin/mongo -u "myTester" -p "xyz123" --authenticationDatabase "test" --port 27017
 
 ```
+
+## useful commands
+
+1. run logrotation
+
+```
+./mongo --eval "db.adminCommand({logRotate: 1})"
+```
